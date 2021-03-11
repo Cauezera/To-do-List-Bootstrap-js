@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>to-do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav class="container-xxl flex-wrap flex-md-nowrap">
+            <span class="navbar-brand mb-0 h1">To-Do List</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#tasks" id="pendencies">Pendentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#done-tasks" id="concluded">Concluídas</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">Pesquisar</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main class="container-xxl">
+        <div class="row">
+            <div class="col">
+                <div class="add-task  mt-5">
+                    <h4 class="">Mais tarefas?</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Limpar a sujeira do Rex">
+                        <button class="btn btn-outline-secondary" type="button" id="button-add-task">Adicionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="tasks mt-5 d-flex flex-column align-items-center" id="tasks">
+                    <h4>Tarefas Pendentes</h4>
+                    <ul class="list-group list-group">
+                        <li class="list-group-item flex-fill d-flex align-items-center">
+                            <label class="flex-fill text-wrap">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores, distinctio non minima minus ipsa iure quam! Odit, ipsam.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item flex-fill d-flex align-items-center">
+                            <label class="flex-fill text-wrap">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="done-tasks mt-5 d-flex flex-column align-items-center" id="done-tasks">
+                    <h4>Tarefas Concluídas</h4>
+                    <ul class="list-group d-flex flex-grow-1">
+                        <li class="list-group-item d-flex align-items-center justify-content-between">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item flex-fill d-flex align-items-center">
+                            <label class="flex-fill text-wrap">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores, distinctio non minima minus ipsa iure quam! Odit, ipsam. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, iure. Unde blanditiis deleniti quibusdam ex. Tempora voluptatibus alias totam, nobis dolores qui tenetur, blanditiis deserunt minus, doloribus atque aspernatur asperiores.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item flex-fill d-flex align-items-center">
+                            <label class="flex-fill text-wrap">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center">
+                            <label class="flex-fill">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem quas
+                                suscipit voluptatem ipsum tempora expedita sed corporis, cum facilis sapiente
+                                asperiores, distinctio non minima minus ipsa iure quam! Odit, ipsam.</label>
+                            <button class="btn btn-outline-danger" type="button" id="button-cancel-task">X</button>
+                            <button class="btn btn-outline-success" type="button" id="button-cancel-task">X</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bd-footer p-3 p-md-5 mt-5 bg-light"></footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</html>
